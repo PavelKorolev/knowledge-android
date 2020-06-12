@@ -2,6 +2,7 @@ package xyz.pavelkorolev.knowledge.service
 
 import xyz.pavelkorolev.knowledge.R
 import xyz.pavelkorolev.knowledge.core.ResourceProvider
+import javax.inject.Inject
 
 interface EightBallService {
 
@@ -9,7 +10,7 @@ interface EightBallService {
 
 }
 
-class EightBallServiceImpl(
+class EightBallServiceImpl @Inject constructor(
     resourceProvider: ResourceProvider
 ) : EightBallService {
 

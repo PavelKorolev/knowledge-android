@@ -15,6 +15,12 @@ ext {
         kotlinVersion = '1.3.72',
         // Dagger
         hiltVersion = '2.28-alpha',
+        // AndroidX
+        androdixLifecycleVersion = '2.3.0-alpha04',
+        androidxHiltVersion = '1.0.0-alpha01',
+        androidxCoreKtxVersion = '1.5.0-alpha01',
+        androidxFragmentKtxVersion = '1.3.0-alpha06',
+        materialVersion = '1.3.0-alpha01',
     ]
     gradlePlugins = [
         buildTools: "com.android.tools.build:gradle:$gradleVersion",
@@ -22,9 +28,14 @@ ext {
         hilt      : "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion",
     ]
     libraries = [
-        kotlin      : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion",
-        material    : "com.google.android.material:material:1.2.0-beta01",
-        hilt        : "com.google.dagger:hilt-android:$hiltVersion",
-        hiltCompiler: "com.google.dagger:hilt-android-compiler:$hiltVersion",
+        kotlin                        : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion",
+        material                      : "com.google.android.material:material:$materialVersion",
+        hilt                          : "com.google.dagger:hilt-android:$hiltVersion",
+        hiltCompiler                  : "com.google.dagger:hilt-android-compiler:$hiltVersion",
+        androidxHiltLifecycleViewModel: "androidx.hilt:hilt-lifecycle-viewmodel:$androidxHiltVersion",
+        androidxHiltCompiler          : "androidx.hilt:hilt-compiler:$androidxHiltVersion",
+        androidxCoreKtx               : "androidx.core:core-ktx:$androidxCoreKtxVersion",
+        androidxFragmentKtx           : "androidx.fragment:fragment-ktx:$androidxFragmentKtxVersion",
+        androidxLifecycleViewModel    : "androidx.lifecycle:lifecycle-viewmodel-ktx:$androdixLifecycleVersion",
     ]
 }

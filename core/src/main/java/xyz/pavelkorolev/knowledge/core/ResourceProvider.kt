@@ -1,6 +1,6 @@
 package xyz.pavelkorolev.knowledge.core
 
-import android.app.Application
+import android.content.Context
 import androidx.annotation.ArrayRes
 import androidx.annotation.StringRes
 
@@ -13,7 +13,7 @@ interface ResourceProvider {
 }
 
 class ResourceProviderImpl(
-    application: Application
+    application: Context
 ) : ResourceProvider {
 
     private val resources = application.resources

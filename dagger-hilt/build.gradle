@@ -23,6 +23,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
 }
 
 dependencies {
@@ -30,4 +39,9 @@ dependencies {
 
     implementation libraries.hilt
     kapt libraries.hiltCompiler
+    implementation libraries.androidxHiltLifecycleViewModel
+    kapt libraries.androidxHiltCompiler
+
+    implementation libraries.androidxFragmentKtx
+    implementation libraries.androidxLifecycleViewModel
 }
