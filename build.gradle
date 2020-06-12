@@ -1,0 +1,57 @@
+buildscript {
+    apply from: 'dependencies.gradle'
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath gradlePlugins.buildTools
+        classpath gradlePlugins.kotlin
+    }
+
+}
+
+plugins {
+    id 'org.jlleitschuh.gradle.ktlint' version '9.2.1'
+    id "com.github.ben-manes.versions" version '0.28.0'
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+subprojects {
+    apply plugin: "org.jlleitschuh.gradle.ktlint"
+
+    ktlint {
+        version = "0.36.0"
+        android = true
+        reporters {
+            reporter "plain"
+            reporter "checkstyle"
+        }
+    }
+}
+
+def isNonStable = { String version ->
+    def stableKeyword = ['RELEASE', 'FINAL', 'GA'].any { it ->
+        version.toUpperCase().contains(it)
+    }
+    def regex = /^[0-9,.v-]+(-r)?$/
+    return !stableKeyword && !(version ==~ regex)
+}
+
+dependencyUpdates {
+    rejectVersionIf {
+        isNonStable(it.candidate.version)
+    }
+}

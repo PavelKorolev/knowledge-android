@@ -1,0 +1,12 @@
+[*]
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+
+[*.{kt,kts}]
+# Disabling ktlint rules:
+# - Wildcard imports
+# - Imports ordering
+# - Blank line before }
+# noinspection EditorConfigKeyCorrectness
+disabled_rules = no-wildcard-imports,import-ordering,no-blank-line-before-rbrace
