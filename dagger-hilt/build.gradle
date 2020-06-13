@@ -9,7 +9,7 @@ android {
     buildToolsVersion buildTools
 
     defaultConfig {
-        applicationId "xyz.pavelkorolev.knowledge"
+        applicationId "xyz.pavelkorolev.knowledge.daggerhilt"
 
         minSdkVersion androidMinSdkVersion
         targetSdkVersion androidTargetSdkVersion

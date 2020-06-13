@@ -1,6 +1,6 @@
-package xyz.pavelkorolev.knowledge.ui.main
+package xyz.pavelkorolev.knowledge.daggerhilt.ui.main
 
-import xyz.pavelkorolev.knowledge.service.EightBallService
+import xyz.pavelkorolev.knowledge.daggerhilt.service.EightBallService
 import javax.inject.Inject
 
 class MainInteractor @Inject constructor(

@@ -1,4 +1,4 @@
-package xyz.pavelkorolev.knowledge.ui.main
+package xyz.pavelkorolev.knowledge.daggerhilt.ui.main
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel

@@ -1,7 +1,7 @@
-package xyz.pavelkorolev.knowledge.service
+package xyz.pavelkorolev.knowledge.daggerhilt.service
 
-import xyz.pavelkorolev.knowledge.R
 import xyz.pavelkorolev.knowledge.core.ResourceProvider
+import xyz.pavelkorolev.knowledge.daggerhilt.R
 import javax.inject.Inject
 
 interface EightBallService {

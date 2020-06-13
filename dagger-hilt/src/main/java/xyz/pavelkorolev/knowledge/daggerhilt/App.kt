@@ -1,4 +1,4 @@
-package xyz.pavelkorolev.knowledge
+package xyz.pavelkorolev.knowledge.daggerhilt
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

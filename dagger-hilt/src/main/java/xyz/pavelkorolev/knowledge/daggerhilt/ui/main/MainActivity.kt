@@ -1,11 +1,11 @@
-package xyz.pavelkorolev.knowledge.ui.main
+package xyz.pavelkorolev.knowledge.daggerhilt.ui.main
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
-import xyz.pavelkorolev.knowledge.R
+import xyz.pavelkorolev.knowledge.daggerhilt.R
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

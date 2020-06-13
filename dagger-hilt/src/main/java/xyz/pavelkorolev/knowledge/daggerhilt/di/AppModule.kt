@@ -1,4 +1,4 @@
-package xyz.pavelkorolev.knowledge.di
+package xyz.pavelkorolev.knowledge.daggerhilt.di
 
 import android.content.Context
 import dagger.Module

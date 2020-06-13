@@ -1,11 +1,11 @@
-package xyz.pavelkorolev.knowledge.di
+package xyz.pavelkorolev.knowledge.daggerhilt.di
 
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
-import xyz.pavelkorolev.knowledge.service.EightBallService
-import xyz.pavelkorolev.knowledge.service.EightBallServiceImpl
+import xyz.pavelkorolev.knowledge.daggerhilt.service.EightBallService
+import xyz.pavelkorolev.knowledge.daggerhilt.service.EightBallServiceImpl
 
 @InstallIn(ApplicationComponent::class)
 @Module
