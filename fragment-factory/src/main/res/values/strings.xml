@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">FragmentFactory</string>
+
+    <string name="action_red">Red</string>
+    <string name="action_green">Green</string>
+    <string name="action_blue">Blue</string>
+
+</resources>

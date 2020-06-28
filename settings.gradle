@@ -1,4 +1,5 @@
-include ':core'
-include ':dagger-hilt'
+include ':core',
+    ':dagger-hilt',
+    ':fragment-factory'
 
 rootProject.name = "knowledge-android"
