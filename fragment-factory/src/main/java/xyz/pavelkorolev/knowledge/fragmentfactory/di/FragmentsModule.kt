@@ -4,7 +4,7 @@ import androidx.fragment.app.Fragment
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
-import xyz.pavelkorolev.knowledge.fragmentfactory.ui.main.ColorFragment
+import xyz.pavelkorolev.knowledge.fragmentfactory.ui.color.ColorFragment
 import xyz.pavelkorolev.knowledge.fragmentfactory.ui.main.MainFragment
 
 @Module

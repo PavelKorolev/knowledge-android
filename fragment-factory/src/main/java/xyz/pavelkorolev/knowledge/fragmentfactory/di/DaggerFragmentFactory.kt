@@ -1,4 +1,4 @@
-package xyz.pavelkorolev.knowledge.fragmentfactory.ui.main
+package xyz.pavelkorolev.knowledge.fragmentfactory.di
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory

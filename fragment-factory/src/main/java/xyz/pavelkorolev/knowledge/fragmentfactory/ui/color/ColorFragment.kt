@@ -1,4 +1,4 @@
-package xyz.pavelkorolev.knowledge.fragmentfactory.ui.main
+package xyz.pavelkorolev.knowledge.fragmentfactory.ui.color
 
 import android.os.Bundle
 import android.view.View

@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState != null) return
         supportFragmentManager.commit {
             add(android.R.id.content, MainFragment::class.java, null)
+            addToBackStack(null)
         }
     }
 
