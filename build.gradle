@@ -10,6 +10,7 @@ buildscript {
         classpath gradlePlugins.buildTools
         classpath gradlePlugins.kotlin
         classpath gradlePlugins.hilt
+        classpath gradlePlugins.safeArgs
     }
 
 }

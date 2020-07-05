@@ -11,24 +11,17 @@
         android:text="@string/app_name" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/redButton"
+        android:id="@+id/authButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/action_red" />
+        android:text="@string/action_auth" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/blueButton"
+        android:id="@+id/registerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/action_blue" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/greenButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/action_green" />
+        android:text="@string/action_register" />
 
 </LinearLayout>

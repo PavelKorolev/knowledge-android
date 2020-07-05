@@ -1,5 +1,6 @@
 include ':core',
     ':dagger-hilt',
-    ':fragment-factory'
+    ':fragment-factory',
+    ':jetpack-navigation'
 
 rootProject.name = "knowledge-android"

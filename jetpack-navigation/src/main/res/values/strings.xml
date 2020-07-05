@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Jetpack Navigation</string>
+
+    <string name="action_red">Red</string>
+    <string name="action_green">Green</string>
+    <string name="action_blue">Blue</string>
+
+    <string name="action_auth">Authorize</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_register">Register</string>
+    <string name="action_accept">Accept</string>
+    <string name="action_next">Next</string>
+
+    <string name="name">Name</string>
+    <string name="license">Here is long license text. You should accept it if you want to register.</string>
+    <string name="welcome">Welcome into Jetpack Navigation app, %1$s</string>
+
+</resources>
