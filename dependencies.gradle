@@ -50,6 +50,9 @@ ext {
         androidxNavigationUi          : "androidx.navigation:navigation-ui-ktx:$navigationVersion",
         leakCanary                    : "com.squareup.leakcanary:leakcanary-android:2.4",
         ktorAndroid                   : "io.ktor:ktor-client-android:$ktorVersion",
-        kotlinCoroutinesAndroid       : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinCoroutinesVersion",
+        ktorOkHttp                    : "io.ktor:ktor-client-okhttp:$ktorVersion",
+        ktorSerialization             : "io.ktor:ktor-client-serialization-jvm:$ktorVersion",
+        kotlinxSerializationRuntime   : "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0",
+        kotlinxCoroutinesAndroid      : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinCoroutinesVersion",
     ]
 }

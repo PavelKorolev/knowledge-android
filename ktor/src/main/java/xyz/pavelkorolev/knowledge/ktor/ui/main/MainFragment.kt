@@ -29,9 +29,13 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     private fun load() {
         GlobalScope.launch(Dispatchers.Main) {
             progressBar.isVisible = true
-            val response = api.getFact()
+            val response = api.getFact(5)
             progressBar.isVisible = false
-            responseTextView.text = response
+
+            val text = response
+                .mapNotNull { it.text }
+                .joinToString("\n\n")
+            responseTextView.text = text
         }
     }
 

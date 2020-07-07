@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlinx-serialization'
 
 android {
     compileSdkVersion androidCompileSdkVersion
@@ -32,11 +33,27 @@ android {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+    }
+
 }
 
 dependencies {
     implementation project(':core')
 
-    implementation libraries.kotlinCoroutinesAndroid
+    implementation libraries.kotlinxCoroutinesAndroid
     implementation libraries.ktorAndroid
+    implementation libraries.ktorOkHttp
+    implementation libraries.ktorSerialization
+
+    implementation libraries.kotlinxSerializationRuntime
 }
