@@ -52,6 +52,7 @@ ext {
         ktorAndroid                   : "io.ktor:ktor-client-android:$ktorVersion",
         ktorOkHttp                    : "io.ktor:ktor-client-okhttp:$ktorVersion",
         ktorSerialization             : "io.ktor:ktor-client-serialization-jvm:$ktorVersion",
+        ktorLogging                   : "io.ktor:ktor-client-logging-jvm:$ktorVersion",
         kotlinxSerializationRuntime   : "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0",
         kotlinxCoroutinesAndroid      : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinCoroutinesVersion",
     ]

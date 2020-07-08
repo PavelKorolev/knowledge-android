@@ -54,6 +54,7 @@ dependencies {
     implementation libraries.ktorAndroid
     implementation libraries.ktorOkHttp
     implementation libraries.ktorSerialization
+    implementation libraries.ktorLogging
 
     implementation libraries.kotlinxSerializationRuntime
 }

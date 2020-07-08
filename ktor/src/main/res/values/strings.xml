@@ -3,5 +3,7 @@
     <string name="app_name">Knowledge. Ktor</string>
 
     <string name="action_refresh">Refresh</string>
+    <string name="cat_facts">Cat Facts</string>
+    <string name="random_user">Random User</string>
 
 </resources>

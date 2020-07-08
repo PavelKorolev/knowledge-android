@@ -12,6 +12,36 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name" />
 
+    <RadioGroup
+        android:id="@+id/sourceRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/catFactsRadioButton"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/catFactsRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_facts" />
+
+        <RadioButton
+            android:id="@+id/randomUserRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/random_user" />
+
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/countSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="7"
+        android:progress="0" />
+
     <Button
         android:id="@+id/refreshButton"
         android:layout_width="wrap_content"
@@ -27,8 +57,9 @@
 
     <TextView
         android:id="@+id/responseTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         tools:text="Result" />
 
 </LinearLayout>
