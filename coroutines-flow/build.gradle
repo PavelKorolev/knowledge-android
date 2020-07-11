@@ -2,14 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'kotlinx-serialization'
 
 android {
     compileSdkVersion androidCompileSdkVersion
     buildToolsVersion buildTools
 
     defaultConfig {
-        applicationId "xyz.pavelkorolev.knowledge.ktor"
+        applicationId "xyz.pavelkorolev.knowledge.coroutinesflow"
 
         minSdkVersion androidMinSdkVersion
         targetSdkVersion androidTargetSdkVersion
@@ -51,12 +50,8 @@ dependencies {
     implementation project(':core')
 
     implementation libraries.kotlinxCoroutinesAndroid
-    implementation libraries.ktorAndroid
-    implementation libraries.ktorOkHttp
-    implementation libraries.ktorSerialization
-    implementation libraries.ktorLogging
 
-    implementation libraries.kotlinxSerializationRuntime
-
+    implementation libraries.androidxFragmentKtx
+    implementation libraries.androidxLifecycleViewModel
     implementation libraries.androidxLifecycleRuntime
 }

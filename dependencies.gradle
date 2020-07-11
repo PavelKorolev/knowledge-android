@@ -46,6 +46,7 @@ ext {
         androidxCoreKtx               : "androidx.core:core-ktx:$androidxCoreKtxVersion",
         androidxFragmentKtx           : "androidx.fragment:fragment-ktx:$androidxFragmentKtxVersion",
         androidxLifecycleViewModel    : "androidx.lifecycle:lifecycle-viewmodel-ktx:$androdixLifecycleVersion",
+        androidxLifecycleRuntime      : "androidx.lifecycle:lifecycle-runtime-ktx:$androdixLifecycleVersion",
         androidxNavigation            : "androidx.navigation:navigation-fragment-ktx:$navigationVersion",
         androidxNavigationUi          : "androidx.navigation:navigation-ui-ktx:$navigationVersion",
         leakCanary                    : "com.squareup.leakcanary:leakcanary-android:2.4",

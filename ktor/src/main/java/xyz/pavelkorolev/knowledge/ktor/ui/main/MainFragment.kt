@@ -4,9 +4,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import kotlinx.android.synthetic.main.fragment_main.*
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import xyz.pavelkorolev.knowledge.ktor.BuildConfig
 import xyz.pavelkorolev.knowledge.ktor.R
@@ -45,7 +44,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     private val count: Int get() = countSeekBar.progress + 2
 
     private fun loadCatFacts() {
-        GlobalScope.launch(Dispatchers.Main) {
+        lifecycleScope.launch {
             progressBar.isVisible = true
             val response = api.getFacts(count)
             progressBar.isVisible = false
@@ -58,7 +57,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     }
 
     private fun loadRandomUser() {
-        GlobalScope.launch(Dispatchers.Main) {
+        lifecycleScope.launch {
             progressBar.isVisible = true
             val response = userApi.getUsers(count)
             progressBar.isVisible = false
